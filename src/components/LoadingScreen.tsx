@@ -40,8 +40,8 @@ export function LoadingScreen() {
     const assetsReady = Promise.all([
       windowReady,
       document.fonts?.ready ?? Promise.resolve(),
-      preloadImage('/amazonlogo.png'),
-      ...loadingImages.map((name) => preloadImage(`/loading/${name}`)),
+      preloadImage(`${import.meta.env.BASE_URL}amazonlogo.png`),
+      ...loadingImages.map((name) => preloadImage(`${import.meta.env.BASE_URL}loading/${name}`)),
     ])
     const minimumRun = new Promise<void>((resolve) => window.setTimeout(resolve, 4700))
     const logoTimer = window.setTimeout(() => setStage('name'), 1650)
@@ -72,7 +72,7 @@ export function LoadingScreen() {
       <div className="loader__atmosphere" aria-hidden="true" />
       <div className="loader__logo-stage">
         <span className="loader__logo-orbit" aria-hidden="true" />
-        <img src="/amazonlogo.png" alt="2º Amazon Tech Energy" className="loader__logo" />
+        <img src={`${import.meta.env.BASE_URL}amazonlogo.png`} alt="2º Amazon Tech Energy" className="loader__logo" />
       </div>
 
       <div className="loader__name-stage" aria-hidden="true">
@@ -87,7 +87,7 @@ export function LoadingScreen() {
               {images.map((image, imageIndex) => (
                 <img
                   className={imageIndex === frame % images.length ? 'is-active' : ''}
-                  src={`/loading/${image}`}
+                  src={`${import.meta.env.BASE_URL}loading/${image}`}
                   alt=""
                   key={image}
                 />

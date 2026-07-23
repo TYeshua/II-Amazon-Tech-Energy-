@@ -10,7 +10,7 @@ function VenueModel() {
   const group = useRef<Group>(null)
   const targetRotation = useRef({ x: -0.06, y: -0.35 })
   const { gl, invalidate } = useThree()
-  const gltf = useLoader(GLTFLoader, '/local.optimized.glb', loader => loader.setMeshoptDecoder(MeshoptDecoder))
+  const gltf = useLoader(GLTFLoader, `${import.meta.env.BASE_URL}local.optimized.glb`, loader => loader.setMeshoptDecoder(MeshoptDecoder))
   const scene = useMemo(() => {
     const model = gltf.scene.clone(true)
     const bounds = new Box3().setFromObject(model)
@@ -149,7 +149,7 @@ export function AboutEventSection() {
           <LazyVenueCanvas />
           <div className="venue-card__label"><MapPin size={15}/><span><small>Local do evento</small>Fonte do Caranã</span></div>
           <div className="venue-card__city">
-            <img src="/salinas.webp" alt="Vista aérea de Salinópolis, Pará" />
+            <img src={`${import.meta.env.BASE_URL}salinas.webp`} alt="Vista aérea de Salinópolis, Pará" />
             <span><small>Cidade anfitriã</small>Salinópolis • PA</span>
           </div>
         </div>
