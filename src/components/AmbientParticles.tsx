@@ -3,7 +3,7 @@ import Antigravity from './Antigravity'
 export default function AmbientParticles() {
   return <div className="lower-site__particles" aria-hidden="true">
     <Antigravity
-      count={420}
+      count={200}
       magnetRadius={5.5}
       ringRadius={6.5}
       waveSpeed={.3}
