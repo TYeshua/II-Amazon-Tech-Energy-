@@ -1,0 +1,1503 @@
+{
+  "summary": {
+    "processed": 37,
+    "successful": 37,
+    "failed": 0,
+    "source_bytes": 74354462,
+    "output_bytes": 56198559
+  },
+  "config": {
+    "mode": "vector",
+    "raster_formats": [
+      "webp"
+    ],
+    "webp_quality": 82,
+    "avif_quality": 55,
+    "max_dimension": 2560,
+    "upscale": 1.0,
+    "enhance": true,
+    "vector_colors": 16,
+    "trace_max_dimension": 1800,
+    "simplify": 0.0015,
+    "min_area": 2.0,
+    "alpha_threshold": 24,
+    "recursive": true,
+    "overwrite": true,
+    "preserve_icc": true
+  },
+  "results": [
+    {
+      "source": "C:\\Users\\thiag\\OneDrive\\Área de Trabalho\\Vetorizador_Img\\imgs\\amazon_anterior\\A1.JPG",
+      "source_bytes": 1354500,
+      "detected_kind": "graphic",
+      "analysis": {
+        "kind": "graphic",
+        "confidence": 0.59,
+        "quantization_rmse": 9.984,
+        "approximate_unique_colors": 1413,
+        "edge_density": 0.08393,
+        "entropy": 7.62,
+        "has_alpha": false
+      },
+      "outputs": [
+        {
+          "path": "C:\\Users\\thiag\\OneDrive\\Área de Trabalho\\Vetorizador_Img\\imagens_vetorizadas\\amazon_anterior\\A1.svg",
+          "bytes": 2957737,
+          "human_size": "2.8 MB",
+          "reduction_percent_vs_source": -118.36,
+          "vectorization": {
+            "palette_colors_used": 16,
+            "svg_paths": 15,
+            "svg_points": 201250,
+            "trace_dimensions": [
+              1800,
+              1200
+            ]
+          }
+        },
+        {
+          "path": "C:\\Users\\thiag\\OneDrive\\Área de Trabalho\\Vetorizador_Img\\imagens_vetorizadas\\amazon_anterior\\A1.webp",
+          "bytes": 231502,
+          "human_size": "226.1 KB",
+          "reduction_percent_vs_source": 82.91
+        }
+      ],
+      "warnings": [],
+      "error": null
+    },
+    {
+      "source": "C:\\Users\\thiag\\OneDrive\\Área de Trabalho\\Vetorizador_Img\\imgs\\amazon_anterior\\A10.JPG",
+      "source_bytes": 6800455,
+      "detected_kind": "graphic",
+      "analysis": {
+        "kind": "photo",
+        "confidence": 0.74,
+        "quantization_rmse": 14.057,
+        "approximate_unique_colors": 2533,
+        "edge_density": 0.10942,
+        "entropy": 7.572,
+        "has_alpha": false
+      },
+      "outputs": [
+        {
+          "path": "C:\\Users\\thiag\\OneDrive\\Área de Trabalho\\Vetorizador_Img\\imagens_vetorizadas\\amazon_anterior\\A10.svg",
+          "bytes": 2666131,
+          "human_size": "2.5 MB",
+          "reduction_percent_vs_source": 60.79,
+          "vectorization": {
+            "palette_colors_used": 16,
+            "svg_paths": 15,
+            "svg_points": 194147,
+            "trace_dimensions": [
+              1800,
+              1200
+            ]
+          }
+        },
+        {
+          "path": "C:\\Users\\thiag\\OneDrive\\Área de Trabalho\\Vetorizador_Img\\imagens_vetorizadas\\amazon_anterior\\A10.webp",
+          "bytes": 254862,
+          "human_size": "248.9 KB",
+          "reduction_percent_vs_source": 96.25
+        }
+      ],
+      "warnings": [
+        "A imagem possui 2 quadros; somente o primeiro foi processado.",
+        "Vetorização forçada em imagem com características fotográficas; o SVG pode ficar maior ou menos fiel."
+      ],
+      "error": null
+    },
+    {
+      "source": "C:\\Users\\thiag\\OneDrive\\Área de Trabalho\\Vetorizador_Img\\imgs\\amazon_anterior\\A11.JPG",
+      "source_bytes": 8016487,
+      "detected_kind": "graphic",
+      "analysis": {
+        "kind": "photo",
+        "confidence": 0.672,
+        "quantization_rmse": 11.648,
+        "approximate_unique_colors": 1996,
+        "edge_density": 0.16902,
+        "entropy": 7.47,
+        "has_alpha": false
+      },
+      "outputs": [
+        {
+          "path": "C:\\Users\\thiag\\OneDrive\\Área de Trabalho\\Vetorizador_Img\\imagens_vetorizadas\\amazon_anterior\\A11.svg",
+          "bytes": 7176918,
+          "human_size": "6.8 MB",
+          "reduction_percent_vs_source": 10.47,
+          "vectorization": {
+            "palette_colors_used": 16,
+            "svg_paths": 15,
+            "svg_points": 525405,
+            "trace_dimensions": [
+              1800,
+              1200
+            ]
+          }
+        },
+        {
+          "path": "C:\\Users\\thiag\\OneDrive\\Área de Trabalho\\Vetorizador_Img\\imagens_vetorizadas\\amazon_anterior\\A11.webp",
+          "bytes": 420798,
+          "human_size": "410.9 KB",
+          "reduction_percent_vs_source": 94.75
+        }
+      ],
+      "warnings": [
+        "A imagem possui 2 quadros; somente o primeiro foi processado.",
+        "Vetorização forçada em imagem com características fotográficas; o SVG pode ficar maior ou menos fiel."
+      ],
+      "error": null
+    },
+    {
+      "source": "C:\\Users\\thiag\\OneDrive\\Área de Trabalho\\Vetorizador_Img\\imgs\\amazon_anterior\\A2.JPG",
+      "source_bytes": 6711767,
+      "detected_kind": "graphic",
+      "analysis": {
+        "kind": "graphic",
+        "confidence": 0.533,
+        "quantization_rmse": 10.403,
+        "approximate_unique_colors": 1535,
+        "edge_density": 0.08692,
+        "entropy": 7.465,
+        "has_alpha": false
+      },
+      "outputs": [
+        {
+          "path": "C:\\Users\\thiag\\OneDrive\\Área de Trabalho\\Vetorizador_Img\\imagens_vetorizadas\\amazon_anterior\\A2.svg",
+          "bytes": 2254066,
+          "human_size": "2.1 MB",
+          "reduction_percent_vs_source": 66.42,
+          "vectorization": {
+            "palette_colors_used": 16,
+            "svg_paths": 15,
+            "svg_points": 164946,
+            "trace_dimensions": [
+              1800,
+              1200
+            ]
+          }
+        },
+        {
+          "path": "C:\\Users\\thiag\\OneDrive\\Área de Trabalho\\Vetorizador_Img\\imagens_vetorizadas\\amazon_anterior\\A2.webp",
+          "bytes": 206676,
+          "human_size": "201.8 KB",
+          "reduction_percent_vs_source": 96.92
+        }
+      ],
+      "warnings": [
+        "A imagem possui 2 quadros; somente o primeiro foi processado."
+      ],
+      "error": null
+    },
+    {
+      "source": "C:\\Users\\thiag\\OneDrive\\Área de Trabalho\\Vetorizador_Img\\imgs\\amazon_anterior\\A3.JPG",
+      "source_bytes": 7430848,
+      "detected_kind": "graphic",
+      "analysis": {
+        "kind": "photo",
+        "confidence": 0.63,
+        "quantization_rmse": 10.767,
+        "approximate_unique_colors": 1949,
+        "edge_density": 0.09274,
+        "entropy": 7.721,
+        "has_alpha": false
+      },
+      "outputs": [
+        {
+          "path": "C:\\Users\\thiag\\OneDrive\\Área de Trabalho\\Vetorizador_Img\\imagens_vetorizadas\\amazon_anterior\\A3.svg",
+          "bytes": 6064332,
+          "human_size": "5.8 MB",
+          "reduction_percent_vs_source": 18.39,
+          "vectorization": {
+            "palette_colors_used": 16,
+            "svg_paths": 15,
+            "svg_points": 434697,
+            "trace_dimensions": [
+              1800,
+              1200
+            ]
+          }
+        },
+        {
+          "path": "C:\\Users\\thiag\\OneDrive\\Área de Trabalho\\Vetorizador_Img\\imagens_vetorizadas\\amazon_anterior\\A3.webp",
+          "bytes": 459356,
+          "human_size": "448.6 KB",
+          "reduction_percent_vs_source": 93.82
+        }
+      ],
+      "warnings": [
+        "A imagem possui 2 quadros; somente o primeiro foi processado.",
+        "Vetorização forçada em imagem com características fotográficas; o SVG pode ficar maior ou menos fiel."
+      ],
+      "error": null
+    },
+    {
+      "source": "C:\\Users\\thiag\\OneDrive\\Área de Trabalho\\Vetorizador_Img\\imgs\\amazon_anterior\\A4.JPG",
+      "source_bytes": 9465752,
+      "detected_kind": "graphic",
+      "analysis": {
+        "kind": "photo",
+        "confidence": 0.731,
+        "quantization_rmse": 13.703,
+        "approximate_unique_colors": 3173,
+        "edge_density": 0.19451,
+        "entropy": 7.742,
+        "has_alpha": false
+      },
+      "outputs": [
+        {
+          "path": "C:\\Users\\thiag\\OneDrive\\Área de Trabalho\\Vetorizador_Img\\imagens_vetorizadas\\amazon_anterior\\A4.svg",
+          "bytes": 6610170,
+          "human_size": "6.3 MB",
+          "reduction_percent_vs_source": 30.17,
+          "vectorization": {
+            "palette_colors_used": 16,
+            "svg_paths": 15,
+            "svg_points": 486109,
+            "trace_dimensions": [
+              1800,
+              1200
+            ]
+          }
+        },
+        {
+          "path": "C:\\Users\\thiag\\OneDrive\\Área de Trabalho\\Vetorizador_Img\\imagens_vetorizadas\\amazon_anterior\\A4.webp",
+          "bytes": 683574,
+          "human_size": "667.6 KB",
+          "reduction_percent_vs_source": 92.78
+        }
+      ],
+      "warnings": [
+        "A imagem possui 2 quadros; somente o primeiro foi processado.",
+        "Vetorização forçada em imagem com características fotográficas; o SVG pode ficar maior ou menos fiel."
+      ],
+      "error": null
+    },
+    {
+      "source": "C:\\Users\\thiag\\OneDrive\\Área de Trabalho\\Vetorizador_Img\\imgs\\amazon_anterior\\A5.jpg",
+      "source_bytes": 70756,
+      "detected_kind": "graphic",
+      "analysis": {
+        "kind": "graphic",
+        "confidence": 0.761,
+        "quantization_rmse": 8.737,
+        "approximate_unique_colors": 1044,
+        "edge_density": 0.08735,
+        "entropy": 7.338,
+        "has_alpha": false
+      },
+      "outputs": [
+        {
+          "path": "C:\\Users\\thiag\\OneDrive\\Área de Trabalho\\Vetorizador_Img\\imagens_vetorizadas\\amazon_anterior\\A5.svg",
+          "bytes": 571946,
+          "human_size": "558.5 KB",
+          "reduction_percent_vs_source": -708.34,
+          "vectorization": {
+            "palette_colors_used": 16,
+            "svg_paths": 15,
+            "svg_points": 71743,
+            "trace_dimensions": [
+              1296,
+              864
+            ]
+          }
+        },
+        {
+          "path": "C:\\Users\\thiag\\OneDrive\\Área de Trabalho\\Vetorizador_Img\\imagens_vetorizadas\\amazon_anterior\\A5.webp",
+          "bytes": 53434,
+          "human_size": "52.2 KB",
+          "reduction_percent_vs_source": 24.48
+        }
+      ],
+      "warnings": [],
+      "error": null
+    },
+    {
+      "source": "C:\\Users\\thiag\\OneDrive\\Área de Trabalho\\Vetorizador_Img\\imgs\\amazon_anterior\\A6.JPG",
+      "source_bytes": 7676902,
+      "detected_kind": "graphic",
+      "analysis": {
+        "kind": "photo",
+        "confidence": 0.513,
+        "quantization_rmse": 11.755,
+        "approximate_unique_colors": 1558,
+        "edge_density": 0.10049,
+        "entropy": 7.719,
+        "has_alpha": false
+      },
+      "outputs": [
+        {
+          "path": "C:\\Users\\thiag\\OneDrive\\Área de Trabalho\\Vetorizador_Img\\imagens_vetorizadas\\amazon_anterior\\A6.svg",
+          "bytes": 3383803,
+          "human_size": "3.2 MB",
+          "reduction_percent_vs_source": 55.92,
+          "vectorization": {
+            "palette_colors_used": 16,
+            "svg_paths": 15,
+            "svg_points": 245302,
+            "trace_dimensions": [
+              1800,
+              1200
+            ]
+          }
+        },
+        {
+          "path": "C:\\Users\\thiag\\OneDrive\\Área de Trabalho\\Vetorizador_Img\\imagens_vetorizadas\\amazon_anterior\\A6.webp",
+          "bytes": 295988,
+          "human_size": "289.1 KB",
+          "reduction_percent_vs_source": 96.14
+        }
+      ],
+      "warnings": [
+        "A imagem possui 2 quadros; somente o primeiro foi processado.",
+        "Vetorização forçada em imagem com características fotográficas; o SVG pode ficar maior ou menos fiel."
+      ],
+      "error": null
+    },
+    {
+      "source": "C:\\Users\\thiag\\OneDrive\\Área de Trabalho\\Vetorizador_Img\\imgs\\amazon_anterior\\A7.JPG",
+      "source_bytes": 8715093,
+      "detected_kind": "graphic",
+      "analysis": {
+        "kind": "photo",
+        "confidence": 0.645,
+        "quantization_rmse": 12.77,
+        "approximate_unique_colors": 1840,
+        "edge_density": 0.11136,
+        "entropy": 7.622,
+        "has_alpha": false
+      },
+      "outputs": [
+        {
+          "path": "C:\\Users\\thiag\\OneDrive\\Área de Trabalho\\Vetorizador_Img\\imagens_vetorizadas\\amazon_anterior\\A7.svg",
+          "bytes": 5079342,
+          "human_size": "4.8 MB",
+          "reduction_percent_vs_source": 41.72,
+          "vectorization": {
+            "palette_colors_used": 16,
+            "svg_paths": 15,
+            "svg_points": 369658,
+            "trace_dimensions": [
+              1200,
+              1800
+            ]
+          }
+        },
+        {
+          "path": "C:\\Users\\thiag\\OneDrive\\Área de Trabalho\\Vetorizador_Img\\imagens_vetorizadas\\amazon_anterior\\A7.webp",
+          "bytes": 450630,
+          "human_size": "440.1 KB",
+          "reduction_percent_vs_source": 94.83
+        }
+      ],
+      "warnings": [
+        "A imagem possui 2 quadros; somente o primeiro foi processado.",
+        "Vetorização forçada em imagem com características fotográficas; o SVG pode ficar maior ou menos fiel."
+      ],
+      "error": null
+    },
+    {
+      "source": "C:\\Users\\thiag\\OneDrive\\Área de Trabalho\\Vetorizador_Img\\imgs\\amazon_anterior\\A8.JPG",
+      "source_bytes": 7473093,
+      "detected_kind": "graphic",
+      "analysis": {
+        "kind": "photo",
+        "confidence": 0.677,
+        "quantization_rmse": 13.579,
+        "approximate_unique_colors": 1864,
+        "edge_density": 0.11312,
+        "entropy": 7.518,
+        "has_alpha": false
+      },
+      "outputs": [
+        {
+          "path": "C:\\Users\\thiag\\OneDrive\\Área de Trabalho\\Vetorizador_Img\\imagens_vetorizadas\\amazon_anterior\\A8.svg",
+          "bytes": 5059926,
+          "human_size": "4.8 MB",
+          "reduction_percent_vs_source": 32.29,
+          "vectorization": {
+            "palette_colors_used": 16,
+            "svg_paths": 15,
+            "svg_points": 369477,
+            "trace_dimensions": [
+              1800,
+              1200
+            ]
+          }
+        },
+        {
+          "path": "C:\\Users\\thiag\\OneDrive\\Área de Trabalho\\Vetorizador_Img\\imagens_vetorizadas\\amazon_anterior\\A8.webp",
+          "bytes": 270316,
+          "human_size": "264.0 KB",
+          "reduction_percent_vs_source": 96.38
+        }
+      ],
+      "warnings": [
+        "A imagem possui 2 quadros; somente o primeiro foi processado.",
+        "Vetorização forçada em imagem com características fotográficas; o SVG pode ficar maior ou menos fiel."
+      ],
+      "error": null
+    },
+    {
+      "source": "C:\\Users\\thiag\\OneDrive\\Área de Trabalho\\Vetorizador_Img\\imgs\\amazon_anterior\\A9.JPG",
+      "source_bytes": 7028687,
+      "detected_kind": "graphic",
+      "analysis": {
+        "kind": "photo",
+        "confidence": 0.78,
+        "quantization_rmse": 15.488,
+        "approximate_unique_colors": 2584,
+        "edge_density": 0.1637,
+        "entropy": 7.554,
+        "has_alpha": false
+      },
+      "outputs": [
+        {
+          "path": "C:\\Users\\thiag\\OneDrive\\Área de Trabalho\\Vetorizador_Img\\imagens_vetorizadas\\amazon_anterior\\A9.svg",
+          "bytes": 4359939,
+          "human_size": "4.2 MB",
+          "reduction_percent_vs_source": 37.97,
+          "vectorization": {
+            "palette_colors_used": 16,
+            "svg_paths": 15,
+            "svg_points": 315381,
+            "trace_dimensions": [
+              1800,
+              1200
+            ]
+          }
+        },
+        {
+          "path": "C:\\Users\\thiag\\OneDrive\\Área de Trabalho\\Vetorizador_Img\\imagens_vetorizadas\\amazon_anterior\\A9.webp",
+          "bytes": 298792,
+          "human_size": "291.8 KB",
+          "reduction_percent_vs_source": 95.75
+        }
+      ],
+      "warnings": [
+        "A imagem possui 2 quadros; somente o primeiro foi processado.",
+        "Vetorização forçada em imagem com características fotográficas; o SVG pode ficar maior ou menos fiel."
+      ],
+      "error": null
+    },
+    {
+      "source": "C:\\Users\\thiag\\OneDrive\\Área de Trabalho\\Vetorizador_Img\\imgs\\amazonlogo.png",
+      "source_bytes": 59404,
+      "detected_kind": "graphic",
+      "analysis": {
+        "kind": "graphic",
+        "confidence": 0.99,
+        "quantization_rmse": 2.754,
+        "approximate_unique_colors": 113,
+        "edge_density": 0.04234,
+        "entropy": 0.645,
+        "has_alpha": true
+      },
+      "outputs": [
+        {
+          "path": "C:\\Users\\thiag\\OneDrive\\Área de Trabalho\\Vetorizador_Img\\imagens_vetorizadas\\amazonlogo.svg",
+          "bytes": 45406,
+          "human_size": "44.3 KB",
+          "reduction_percent_vs_source": 23.56,
+          "vectorization": {
+            "palette_colors_used": 10,
+            "svg_paths": 8,
+            "svg_points": 3218,
+            "trace_dimensions": [
+              1800,
+              1013
+            ]
+          }
+        },
+        {
+          "path": "C:\\Users\\thiag\\OneDrive\\Área de Trabalho\\Vetorizador_Img\\imagens_vetorizadas\\amazonlogo.webp",
+          "bytes": 36172,
+          "human_size": "35.3 KB",
+          "reduction_percent_vs_source": 39.11
+        }
+      ],
+      "warnings": [],
+      "error": null
+    },
+    {
+      "source": "C:\\Users\\thiag\\OneDrive\\Área de Trabalho\\Vetorizador_Img\\imgs\\ambiente.jpg",
+      "source_bytes": 31707,
+      "detected_kind": "graphic",
+      "analysis": {
+        "kind": "photo",
+        "confidence": 0.65,
+        "quantization_rmse": 12.253,
+        "approximate_unique_colors": 1892,
+        "edge_density": 0.14739,
+        "entropy": 7.778,
+        "has_alpha": false
+      },
+      "outputs": [
+        {
+          "path": "C:\\Users\\thiag\\OneDrive\\Área de Trabalho\\Vetorizador_Img\\imagens_vetorizadas\\ambiente.svg",
+          "bytes": 187874,
+          "human_size": "183.5 KB",
+          "reduction_percent_vs_source": -492.53,
+          "vectorization": {
+            "palette_colors_used": 16,
+            "svg_paths": 15,
+            "svg_points": 24452,
+            "trace_dimensions": [
+              594,
+              336
+            ]
+          }
+        },
+        {
+          "path": "C:\\Users\\thiag\\OneDrive\\Área de Trabalho\\Vetorizador_Img\\imagens_vetorizadas\\ambiente.webp",
+          "bytes": 28712,
+          "human_size": "28.0 KB",
+          "reduction_percent_vs_source": 9.45
+        }
+      ],
+      "warnings": [
+        "Vetorização forçada em imagem com características fotográficas; o SVG pode ficar maior ou menos fiel."
+      ],
+      "error": null
+    },
+    {
+      "source": "C:\\Users\\thiag\\OneDrive\\Área de Trabalho\\Vetorizador_Img\\imgs\\loading\\A1.png",
+      "source_bytes": 170087,
+      "detected_kind": "graphic",
+      "analysis": {
+        "kind": "graphic",
+        "confidence": 0.856,
+        "quantization_rmse": 10.689,
+        "approximate_unique_colors": 642,
+        "edge_density": 0.20733,
+        "entropy": 6.206,
+        "has_alpha": false
+      },
+      "outputs": [
+        {
+          "path": "C:\\Users\\thiag\\OneDrive\\Área de Trabalho\\Vetorizador_Img\\imagens_vetorizadas\\loading\\A1.svg",
+          "bytes": 84006,
+          "human_size": "82.0 KB",
+          "reduction_percent_vs_source": 50.61,
+          "vectorization": {
+            "palette_colors_used": 16,
+            "svg_paths": 15,
+            "svg_points": 11676,
+            "trace_dimensions": [
+              170,
+              412
+            ]
+          }
+        },
+        {
+          "path": "C:\\Users\\thiag\\OneDrive\\Área de Trabalho\\Vetorizador_Img\\imagens_vetorizadas\\loading\\A1.webp",
+          "bytes": 33368,
+          "human_size": "32.6 KB",
+          "reduction_percent_vs_source": 80.38
+        }
+      ],
+      "warnings": [],
+      "error": null
+    },
+    {
+      "source": "C:\\Users\\thiag\\OneDrive\\Área de Trabalho\\Vetorizador_Img\\imgs\\loading\\A2.png",
+      "source_bytes": 116037,
+      "detected_kind": "graphic",
+      "analysis": {
+        "kind": "graphic",
+        "confidence": 0.99,
+        "quantization_rmse": 6.386,
+        "approximate_unique_colors": 562,
+        "edge_density": 0.19651,
+        "entropy": 6.49,
+        "has_alpha": false
+      },
+      "outputs": [
+        {
+          "path": "C:\\Users\\thiag\\OneDrive\\Área de Trabalho\\Vetorizador_Img\\imagens_vetorizadas\\loading\\A2.svg",
+          "bytes": 164407,
+          "human_size": "160.6 KB",
+          "reduction_percent_vs_source": -41.68,
+          "vectorization": {
+            "palette_colors_used": 16,
+            "svg_paths": 15,
+            "svg_points": 23340,
+            "trace_dimensions": [
+              152,
+              373
+            ]
+          }
+        },
+        {
+          "path": "C:\\Users\\thiag\\OneDrive\\Área de Trabalho\\Vetorizador_Img\\imagens_vetorizadas\\loading\\A2.webp",
+          "bytes": 14970,
+          "human_size": "14.6 KB",
+          "reduction_percent_vs_source": 87.1
+        }
+      ],
+      "warnings": [],
+      "error": null
+    },
+    {
+      "source": "C:\\Users\\thiag\\OneDrive\\Área de Trabalho\\Vetorizador_Img\\imgs\\loading\\A3.png",
+      "source_bytes": 134820,
+      "detected_kind": "graphic",
+      "analysis": {
+        "kind": "graphic",
+        "confidence": 0.536,
+        "quantization_rmse": 9.511,
+        "approximate_unique_colors": 1594,
+        "edge_density": 0.2207,
+        "entropy": 7.007,
+        "has_alpha": false
+      },
+      "outputs": [
+        {
+          "path": "C:\\Users\\thiag\\OneDrive\\Área de Trabalho\\Vetorizador_Img\\imagens_vetorizadas\\loading\\A3.svg",
+          "bytes": 172651,
+          "human_size": "168.6 KB",
+          "reduction_percent_vs_source": -28.06,
+          "vectorization": {
+            "palette_colors_used": 16,
+            "svg_paths": 15,
+            "svg_points": 24038,
+            "trace_dimensions": [
+              151,
+              370
+            ]
+          }
+        },
+        {
+          "path": "C:\\Users\\thiag\\OneDrive\\Área de Trabalho\\Vetorizador_Img\\imagens_vetorizadas\\loading\\A3.webp",
+          "bytes": 22078,
+          "human_size": "21.6 KB",
+          "reduction_percent_vs_source": 83.62
+        }
+      ],
+      "warnings": [],
+      "error": null
+    },
+    {
+      "source": "C:\\Users\\thiag\\OneDrive\\Área de Trabalho\\Vetorizador_Img\\imgs\\loading\\A4.png",
+      "source_bytes": 175832,
+      "detected_kind": "graphic",
+      "analysis": {
+        "kind": "graphic",
+        "confidence": 0.509,
+        "quantization_rmse": 9.584,
+        "approximate_unique_colors": 1661,
+        "edge_density": 0.22459,
+        "entropy": 7.039,
+        "has_alpha": false
+      },
+      "outputs": [
+        {
+          "path": "C:\\Users\\thiag\\OneDrive\\Área de Trabalho\\Vetorizador_Img\\imagens_vetorizadas\\loading\\A4.svg",
+          "bytes": 219383,
+          "human_size": "214.2 KB",
+          "reduction_percent_vs_source": -24.77,
+          "vectorization": {
+            "palette_colors_used": 16,
+            "svg_paths": 15,
+            "svg_points": 30155,
+            "trace_dimensions": [
+              172,
+              420
+            ]
+          }
+        },
+        {
+          "path": "C:\\Users\\thiag\\OneDrive\\Área de Trabalho\\Vetorizador_Img\\imagens_vetorizadas\\loading\\A4.webp",
+          "bytes": 28484,
+          "human_size": "27.8 KB",
+          "reduction_percent_vs_source": 83.8
+        }
+      ],
+      "warnings": [],
+      "error": null
+    },
+    {
+      "source": "C:\\Users\\thiag\\OneDrive\\Área de Trabalho\\Vetorizador_Img\\imgs\\loading\\C1.png",
+      "source_bytes": 164666,
+      "detected_kind": "graphic",
+      "analysis": {
+        "kind": "graphic",
+        "confidence": 0.892,
+        "quantization_rmse": 7.151,
+        "approximate_unique_colors": 811,
+        "edge_density": 0.20587,
+        "entropy": 7.276,
+        "has_alpha": false
+      },
+      "outputs": [
+        {
+          "path": "C:\\Users\\thiag\\OneDrive\\Área de Trabalho\\Vetorizador_Img\\imagens_vetorizadas\\loading\\C1.svg",
+          "bytes": 229468,
+          "human_size": "224.1 KB",
+          "reduction_percent_vs_source": -39.35,
+          "vectorization": {
+            "palette_colors_used": 16,
+            "svg_paths": 15,
+            "svg_points": 31880,
+            "trace_dimensions": [
+              170,
+              417
+            ]
+          }
+        },
+        {
+          "path": "C:\\Users\\thiag\\OneDrive\\Área de Trabalho\\Vetorizador_Img\\imagens_vetorizadas\\loading\\C1.webp",
+          "bytes": 25930,
+          "human_size": "25.3 KB",
+          "reduction_percent_vs_source": 84.25
+        }
+      ],
+      "warnings": [],
+      "error": null
+    },
+    {
+      "source": "C:\\Users\\thiag\\OneDrive\\Área de Trabalho\\Vetorizador_Img\\imgs\\loading\\C2.png",
+      "source_bytes": 169013,
+      "detected_kind": "graphic",
+      "analysis": {
+        "kind": "graphic",
+        "confidence": 0.905,
+        "quantization_rmse": 10.471,
+        "approximate_unique_colors": 525,
+        "edge_density": 0.24388,
+        "entropy": 6.598,
+        "has_alpha": false
+      },
+      "outputs": [
+        {
+          "path": "C:\\Users\\thiag\\OneDrive\\Área de Trabalho\\Vetorizador_Img\\imagens_vetorizadas\\loading\\C2.svg",
+          "bytes": 150486,
+          "human_size": "147.0 KB",
+          "reduction_percent_vs_source": 10.96,
+          "vectorization": {
+            "palette_colors_used": 16,
+            "svg_paths": 15,
+            "svg_points": 21156,
+            "trace_dimensions": [
+              167,
+              413
+            ]
+          }
+        },
+        {
+          "path": "C:\\Users\\thiag\\OneDrive\\Área de Trabalho\\Vetorizador_Img\\imagens_vetorizadas\\loading\\C2.webp",
+          "bytes": 30264,
+          "human_size": "29.6 KB",
+          "reduction_percent_vs_source": 82.09
+        }
+      ],
+      "warnings": [],
+      "error": null
+    },
+    {
+      "source": "C:\\Users\\thiag\\OneDrive\\Área de Trabalho\\Vetorizador_Img\\imgs\\loading\\C3.png",
+      "source_bytes": 90298,
+      "detected_kind": "graphic",
+      "analysis": {
+        "kind": "graphic",
+        "confidence": 0.973,
+        "quantization_rmse": 11.243,
+        "approximate_unique_colors": 646,
+        "edge_density": 0.07164,
+        "entropy": 5.123,
+        "has_alpha": false
+      },
+      "outputs": [
+        {
+          "path": "C:\\Users\\thiag\\OneDrive\\Área de Trabalho\\Vetorizador_Img\\imagens_vetorizadas\\loading\\C3.svg",
+          "bytes": 185519,
+          "human_size": "181.2 KB",
+          "reduction_percent_vs_source": -105.45,
+          "vectorization": {
+            "palette_colors_used": 16,
+            "svg_paths": 15,
+            "svg_points": 25644,
+            "trace_dimensions": [
+              170,
+              412
+            ]
+          }
+        },
+        {
+          "path": "C:\\Users\\thiag\\OneDrive\\Área de Trabalho\\Vetorizador_Img\\imagens_vetorizadas\\loading\\C3.webp",
+          "bytes": 8386,
+          "human_size": "8.2 KB",
+          "reduction_percent_vs_source": 90.71
+        }
+      ],
+      "warnings": [],
+      "error": null
+    },
+    {
+      "source": "C:\\Users\\thiag\\OneDrive\\Área de Trabalho\\Vetorizador_Img\\imgs\\loading\\E1.png",
+      "source_bytes": 168821,
+      "detected_kind": "graphic",
+      "analysis": {
+        "kind": "graphic",
+        "confidence": 0.7,
+        "quantization_rmse": 10.001,
+        "approximate_unique_colors": 1115,
+        "edge_density": 0.1888,
+        "entropy": 7.598,
+        "has_alpha": false
+      },
+      "outputs": [
+        {
+          "path": "C:\\Users\\thiag\\OneDrive\\Área de Trabalho\\Vetorizador_Img\\imagens_vetorizadas\\loading\\E1.svg",
+          "bytes": 237330,
+          "human_size": "231.8 KB",
+          "reduction_percent_vs_source": -40.58,
+          "vectorization": {
+            "palette_colors_used": 16,
+            "svg_paths": 15,
+            "svg_points": 32682,
+            "trace_dimensions": [
+              171,
+              418
+            ]
+          }
+        },
+        {
+          "path": "C:\\Users\\thiag\\OneDrive\\Área de Trabalho\\Vetorizador_Img\\imagens_vetorizadas\\loading\\E1.webp",
+          "bytes": 28086,
+          "human_size": "27.4 KB",
+          "reduction_percent_vs_source": 83.36
+        }
+      ],
+      "warnings": [],
+      "error": null
+    },
+    {
+      "source": "C:\\Users\\thiag\\OneDrive\\Área de Trabalho\\Vetorizador_Img\\imgs\\loading\\E2.png",
+      "source_bytes": 121635,
+      "detected_kind": "graphic",
+      "analysis": {
+        "kind": "graphic",
+        "confidence": 0.99,
+        "quantization_rmse": 9.061,
+        "approximate_unique_colors": 510,
+        "edge_density": 0.07727,
+        "entropy": 5.939,
+        "has_alpha": false
+      },
+      "outputs": [
+        {
+          "path": "C:\\Users\\thiag\\OneDrive\\Área de Trabalho\\Vetorizador_Img\\imagens_vetorizadas\\loading\\E2.svg",
+          "bytes": 175201,
+          "human_size": "171.1 KB",
+          "reduction_percent_vs_source": -44.04,
+          "vectorization": {
+            "palette_colors_used": 16,
+            "svg_paths": 15,
+            "svg_points": 24587,
+            "trace_dimensions": [
+              163,
+              412
+            ]
+          }
+        },
+        {
+          "path": "C:\\Users\\thiag\\OneDrive\\Área de Trabalho\\Vetorizador_Img\\imagens_vetorizadas\\loading\\E2.webp",
+          "bytes": 14178,
+          "human_size": "13.8 KB",
+          "reduction_percent_vs_source": 88.34
+        }
+      ],
+      "warnings": [],
+      "error": null
+    },
+    {
+      "source": "C:\\Users\\thiag\\OneDrive\\Área de Trabalho\\Vetorizador_Img\\imgs\\loading\\E3.png",
+      "source_bytes": 118709,
+      "detected_kind": "graphic",
+      "analysis": {
+        "kind": "graphic",
+        "confidence": 0.727,
+        "quantization_rmse": 10.697,
+        "approximate_unique_colors": 990,
+        "edge_density": 0.05701,
+        "entropy": 6.394,
+        "has_alpha": false
+      },
+      "outputs": [
+        {
+          "path": "C:\\Users\\thiag\\OneDrive\\Área de Trabalho\\Vetorizador_Img\\imagens_vetorizadas\\loading\\E3.svg",
+          "bytes": 205501,
+          "human_size": "200.7 KB",
+          "reduction_percent_vs_source": -73.11,
+          "vectorization": {
+            "palette_colors_used": 16,
+            "svg_paths": 15,
+            "svg_points": 28803,
+            "trace_dimensions": [
+              162,
+              412
+            ]
+          }
+        },
+        {
+          "path": "C:\\Users\\thiag\\OneDrive\\Área de Trabalho\\Vetorizador_Img\\imagens_vetorizadas\\loading\\E3.webp",
+          "bytes": 10678,
+          "human_size": "10.4 KB",
+          "reduction_percent_vs_source": 91.0
+        }
+      ],
+      "warnings": [],
+      "error": null
+    },
+    {
+      "source": "C:\\Users\\thiag\\OneDrive\\Área de Trabalho\\Vetorizador_Img\\imgs\\loading\\H1.png",
+      "source_bytes": 192051,
+      "detected_kind": "graphic",
+      "analysis": {
+        "kind": "graphic",
+        "confidence": 0.905,
+        "quantization_rmse": 8.621,
+        "approximate_unique_colors": 666,
+        "edge_density": 0.25964,
+        "entropy": 6.969,
+        "has_alpha": false
+      },
+      "outputs": [
+        {
+          "path": "C:\\Users\\thiag\\OneDrive\\Área de Trabalho\\Vetorizador_Img\\imagens_vetorizadas\\loading\\H1.svg",
+          "bytes": 132195,
+          "human_size": "129.1 KB",
+          "reduction_percent_vs_source": 31.17,
+          "vectorization": {
+            "palette_colors_used": 16,
+            "svg_paths": 15,
+            "svg_points": 18080,
+            "trace_dimensions": [
+              171,
+              417
+            ]
+          }
+        },
+        {
+          "path": "C:\\Users\\thiag\\OneDrive\\Área de Trabalho\\Vetorizador_Img\\imagens_vetorizadas\\loading\\H1.webp",
+          "bytes": 35624,
+          "human_size": "34.8 KB",
+          "reduction_percent_vs_source": 81.45
+        }
+      ],
+      "warnings": [],
+      "error": null
+    },
+    {
+      "source": "C:\\Users\\thiag\\OneDrive\\Área de Trabalho\\Vetorizador_Img\\imgs\\loading\\H2.png",
+      "source_bytes": 141640,
+      "detected_kind": "graphic",
+      "analysis": {
+        "kind": "graphic",
+        "confidence": 0.99,
+        "quantization_rmse": 4.427,
+        "approximate_unique_colors": 233,
+        "edge_density": 0.08074,
+        "entropy": 6.137,
+        "has_alpha": false
+      },
+      "outputs": [
+        {
+          "path": "C:\\Users\\thiag\\OneDrive\\Área de Trabalho\\Vetorizador_Img\\imagens_vetorizadas\\loading\\H2.svg",
+          "bytes": 105263,
+          "human_size": "102.8 KB",
+          "reduction_percent_vs_source": 25.68,
+          "vectorization": {
+            "palette_colors_used": 16,
+            "svg_paths": 15,
+            "svg_points": 14556,
+            "trace_dimensions": [
+              170,
+              412
+            ]
+          }
+        },
+        {
+          "path": "C:\\Users\\thiag\\OneDrive\\Área de Trabalho\\Vetorizador_Img\\imagens_vetorizadas\\loading\\H2.webp",
+          "bytes": 21630,
+          "human_size": "21.1 KB",
+          "reduction_percent_vs_source": 84.73
+        }
+      ],
+      "warnings": [],
+      "error": null
+    },
+    {
+      "source": "C:\\Users\\thiag\\OneDrive\\Área de Trabalho\\Vetorizador_Img\\imgs\\loading\\M1.png",
+      "source_bytes": 161321,
+      "detected_kind": "graphic",
+      "analysis": {
+        "kind": "graphic",
+        "confidence": 0.607,
+        "quantization_rmse": 9.38,
+        "approximate_unique_colors": 1412,
+        "edge_density": 0.24298,
+        "entropy": 6.631,
+        "has_alpha": false
+      },
+      "outputs": [
+        {
+          "path": "C:\\Users\\thiag\\OneDrive\\Área de Trabalho\\Vetorizador_Img\\imagens_vetorizadas\\loading\\M1.svg",
+          "bytes": 210325,
+          "human_size": "205.4 KB",
+          "reduction_percent_vs_source": -30.38,
+          "vectorization": {
+            "palette_colors_used": 16,
+            "svg_paths": 15,
+            "svg_points": 29233,
+            "trace_dimensions": [
+              170,
+              417
+            ]
+          }
+        },
+        {
+          "path": "C:\\Users\\thiag\\OneDrive\\Área de Trabalho\\Vetorizador_Img\\imagens_vetorizadas\\loading\\M1.webp",
+          "bytes": 25796,
+          "human_size": "25.2 KB",
+          "reduction_percent_vs_source": 84.01
+        }
+      ],
+      "warnings": [],
+      "error": null
+    },
+    {
+      "source": "C:\\Users\\thiag\\OneDrive\\Área de Trabalho\\Vetorizador_Img\\imgs\\loading\\M2.png",
+      "source_bytes": 128462,
+      "detected_kind": "graphic",
+      "analysis": {
+        "kind": "graphic",
+        "confidence": 0.99,
+        "quantization_rmse": 6.23,
+        "approximate_unique_colors": 396,
+        "edge_density": 0.15697,
+        "entropy": 5.946,
+        "has_alpha": false
+      },
+      "outputs": [
+        {
+          "path": "C:\\Users\\thiag\\OneDrive\\Área de Trabalho\\Vetorizador_Img\\imagens_vetorizadas\\loading\\M2.svg",
+          "bytes": 86188,
+          "human_size": "84.2 KB",
+          "reduction_percent_vs_source": 32.91,
+          "vectorization": {
+            "palette_colors_used": 16,
+            "svg_paths": 15,
+            "svg_points": 11853,
+            "trace_dimensions": [
+              152,
+              378
+            ]
+          }
+        },
+        {
+          "path": "C:\\Users\\thiag\\OneDrive\\Área de Trabalho\\Vetorizador_Img\\imagens_vetorizadas\\loading\\M2.webp",
+          "bytes": 22004,
+          "human_size": "21.5 KB",
+          "reduction_percent_vs_source": 82.87
+        }
+      ],
+      "warnings": [],
+      "error": null
+    },
+    {
+      "source": "C:\\Users\\thiag\\OneDrive\\Área de Trabalho\\Vetorizador_Img\\imgs\\loading\\M3.png",
+      "source_bytes": 173158,
+      "detected_kind": "graphic",
+      "analysis": {
+        "kind": "graphic",
+        "confidence": 0.99,
+        "quantization_rmse": 5.601,
+        "approximate_unique_colors": 416,
+        "edge_density": 0.28437,
+        "entropy": 7.707,
+        "has_alpha": false
+      },
+      "outputs": [
+        {
+          "path": "C:\\Users\\thiag\\OneDrive\\Área de Trabalho\\Vetorizador_Img\\imagens_vetorizadas\\loading\\M3.svg",
+          "bytes": 191873,
+          "human_size": "187.4 KB",
+          "reduction_percent_vs_source": -10.81,
+          "vectorization": {
+            "palette_colors_used": 16,
+            "svg_paths": 15,
+            "svg_points": 26407,
+            "trace_dimensions": [
+              168,
+              415
+            ]
+          }
+        },
+        {
+          "path": "C:\\Users\\thiag\\OneDrive\\Área de Trabalho\\Vetorizador_Img\\imagens_vetorizadas\\loading\\M3.webp",
+          "bytes": 31574,
+          "human_size": "30.8 KB",
+          "reduction_percent_vs_source": 81.77
+        }
+      ],
+      "warnings": [],
+      "error": null
+    },
+    {
+      "source": "C:\\Users\\thiag\\OneDrive\\Área de Trabalho\\Vetorizador_Img\\imgs\\loading\\N1.png",
+      "source_bytes": 163509,
+      "detected_kind": "graphic",
+      "analysis": {
+        "kind": "graphic",
+        "confidence": 0.849,
+        "quantization_rmse": 8.816,
+        "approximate_unique_colors": 802,
+        "edge_density": 0.18103,
+        "entropy": 6.999,
+        "has_alpha": false
+      },
+      "outputs": [
+        {
+          "path": "C:\\Users\\thiag\\OneDrive\\Área de Trabalho\\Vetorizador_Img\\imagens_vetorizadas\\loading\\N1.svg",
+          "bytes": 229062,
+          "human_size": "223.7 KB",
+          "reduction_percent_vs_source": -40.09,
+          "vectorization": {
+            "palette_colors_used": 16,
+            "svg_paths": 15,
+            "svg_points": 31795,
+            "trace_dimensions": [
+              171,
+              415
+            ]
+          }
+        },
+        {
+          "path": "C:\\Users\\thiag\\OneDrive\\Área de Trabalho\\Vetorizador_Img\\imagens_vetorizadas\\loading\\N1.webp",
+          "bytes": 26644,
+          "human_size": "26.0 KB",
+          "reduction_percent_vs_source": 83.7
+        }
+      ],
+      "warnings": [],
+      "error": null
+    },
+    {
+      "source": "C:\\Users\\thiag\\OneDrive\\Área de Trabalho\\Vetorizador_Img\\imgs\\loading\\O1.png",
+      "source_bytes": 205001,
+      "detected_kind": "graphic",
+      "analysis": {
+        "kind": "graphic",
+        "confidence": 0.99,
+        "quantization_rmse": 4.729,
+        "approximate_unique_colors": 223,
+        "edge_density": 0.35288,
+        "entropy": 7.7,
+        "has_alpha": false
+      },
+      "outputs": [
+        {
+          "path": "C:\\Users\\thiag\\OneDrive\\Área de Trabalho\\Vetorizador_Img\\imagens_vetorizadas\\loading\\O1.svg",
+          "bytes": 87956,
+          "human_size": "85.9 KB",
+          "reduction_percent_vs_source": 57.09,
+          "vectorization": {
+            "palette_colors_used": 16,
+            "svg_paths": 15,
+            "svg_points": 12030,
+            "trace_dimensions": [
+              168,
+              413
+            ]
+          }
+        },
+        {
+          "path": "C:\\Users\\thiag\\OneDrive\\Área de Trabalho\\Vetorizador_Img\\imagens_vetorizadas\\loading\\O1.webp",
+          "bytes": 39570,
+          "human_size": "38.6 KB",
+          "reduction_percent_vs_source": 80.7
+        }
+      ],
+      "warnings": [],
+      "error": null
+    },
+    {
+      "source": "C:\\Users\\thiag\\OneDrive\\Área de Trabalho\\Vetorizador_Img\\imgs\\loading\\O2.png",
+      "source_bytes": 154245,
+      "detected_kind": "graphic",
+      "analysis": {
+        "kind": "graphic",
+        "confidence": 0.99,
+        "quantization_rmse": 4.553,
+        "approximate_unique_colors": 286,
+        "edge_density": 0.26677,
+        "entropy": 7.747,
+        "has_alpha": false
+      },
+      "outputs": [
+        {
+          "path": "C:\\Users\\thiag\\OneDrive\\Área de Trabalho\\Vetorizador_Img\\imagens_vetorizadas\\loading\\O2.svg",
+          "bytes": 148154,
+          "human_size": "144.7 KB",
+          "reduction_percent_vs_source": 3.95,
+          "vectorization": {
+            "palette_colors_used": 16,
+            "svg_paths": 15,
+            "svg_points": 20818,
+            "trace_dimensions": [
+              165,
+              416
+            ]
+          }
+        },
+        {
+          "path": "C:\\Users\\thiag\\OneDrive\\Área de Trabalho\\Vetorizador_Img\\imagens_vetorizadas\\loading\\O2.webp",
+          "bytes": 26194,
+          "human_size": "25.6 KB",
+          "reduction_percent_vs_source": 83.02
+        }
+      ],
+      "warnings": [],
+      "error": null
+    },
+    {
+      "source": "C:\\Users\\thiag\\OneDrive\\Área de Trabalho\\Vetorizador_Img\\imgs\\loading\\T1.png",
+      "source_bytes": 154639,
+      "detected_kind": "graphic",
+      "analysis": {
+        "kind": "graphic",
+        "confidence": 0.99,
+        "quantization_rmse": 6.883,
+        "approximate_unique_colors": 392,
+        "edge_density": 0.09923,
+        "entropy": 5.783,
+        "has_alpha": false
+      },
+      "outputs": [
+        {
+          "path": "C:\\Users\\thiag\\OneDrive\\Área de Trabalho\\Vetorizador_Img\\imagens_vetorizadas\\loading\\T1.svg",
+          "bytes": 148957,
+          "human_size": "145.5 KB",
+          "reduction_percent_vs_source": 3.67,
+          "vectorization": {
+            "palette_colors_used": 16,
+            "svg_paths": 15,
+            "svg_points": 20656,
+            "trace_dimensions": [
+              173,
+              412
+            ]
+          }
+        },
+        {
+          "path": "C:\\Users\\thiag\\OneDrive\\Área de Trabalho\\Vetorizador_Img\\imagens_vetorizadas\\loading\\T1.webp",
+          "bytes": 24356,
+          "human_size": "23.8 KB",
+          "reduction_percent_vs_source": 84.25
+        }
+      ],
+      "warnings": [],
+      "error": null
+    },
+    {
+      "source": "C:\\Users\\thiag\\OneDrive\\Área de Trabalho\\Vetorizador_Img\\imgs\\loading\\T2.png",
+      "source_bytes": 156429,
+      "detected_kind": "graphic",
+      "analysis": {
+        "kind": "graphic",
+        "confidence": 0.97,
+        "quantization_rmse": 6.118,
+        "approximate_unique_colors": 677,
+        "edge_density": 0.16035,
+        "entropy": 6.452,
+        "has_alpha": false
+      },
+      "outputs": [
+        {
+          "path": "C:\\Users\\thiag\\OneDrive\\Área de Trabalho\\Vetorizador_Img\\imagens_vetorizadas\\loading\\T2.svg",
+          "bytes": 214900,
+          "human_size": "209.9 KB",
+          "reduction_percent_vs_source": -37.38,
+          "vectorization": {
+            "palette_colors_used": 16,
+            "svg_paths": 15,
+            "svg_points": 30008,
+            "trace_dimensions": [
+              165,
+              413
+            ]
+          }
+        },
+        {
+          "path": "C:\\Users\\thiag\\OneDrive\\Área de Trabalho\\Vetorizador_Img\\imagens_vetorizadas\\loading\\T2.webp",
+          "bytes": 25832,
+          "human_size": "25.2 KB",
+          "reduction_percent_vs_source": 83.49
+        }
+      ],
+      "warnings": [],
+      "error": null
+    },
+    {
+      "source": "C:\\Users\\thiag\\OneDrive\\Área de Trabalho\\Vetorizador_Img\\imgs\\loading\\Z1.png",
+      "source_bytes": 150285,
+      "detected_kind": "graphic",
+      "analysis": {
+        "kind": "graphic",
+        "confidence": 0.99,
+        "quantization_rmse": 6.475,
+        "approximate_unique_colors": 566,
+        "edge_density": 0.17811,
+        "entropy": 7.222,
+        "has_alpha": false
+      },
+      "outputs": [
+        {
+          "path": "C:\\Users\\thiag\\OneDrive\\Área de Trabalho\\Vetorizador_Img\\imagens_vetorizadas\\loading\\Z1.svg",
+          "bytes": 181995,
+          "human_size": "177.7 KB",
+          "reduction_percent_vs_source": -21.1,
+          "vectorization": {
+            "palette_colors_used": 16,
+            "svg_paths": 15,
+            "svg_points": 25476,
+            "trace_dimensions": [
+              170,
+              417
+            ]
+          }
+        },
+        {
+          "path": "C:\\Users\\thiag\\OneDrive\\Área de Trabalho\\Vetorizador_Img\\imagens_vetorizadas\\loading\\Z1.webp",
+          "bytes": 21700,
+          "human_size": "21.2 KB",
+          "reduction_percent_vs_source": 85.56
+        }
+      ],
+      "warnings": [],
+      "error": null
+    },
+    {
+      "source": "C:\\Users\\thiag\\OneDrive\\Área de Trabalho\\Vetorizador_Img\\imgs\\loading\\Z2.png",
+      "source_bytes": 171185,
+      "detected_kind": "graphic",
+      "analysis": {
+        "kind": "graphic",
+        "confidence": 0.99,
+        "quantization_rmse": 4.79,
+        "approximate_unique_colors": 343,
+        "edge_density": 0.22922,
+        "entropy": 7.061,
+        "has_alpha": false
+      },
+      "outputs": [
+        {
+          "path": "C:\\Users\\thiag\\OneDrive\\Área de Trabalho\\Vetorizador_Img\\imagens_vetorizadas\\loading\\Z2.svg",
+          "bytes": 200448,
+          "human_size": "195.8 KB",
+          "reduction_percent_vs_source": -17.09,
+          "vectorization": {
+            "palette_colors_used": 16,
+            "svg_paths": 15,
+            "svg_points": 27823,
+            "trace_dimensions": [
+              172,
+              417
+            ]
+          }
+        },
+        {
+          "path": "C:\\Users\\thiag\\OneDrive\\Área de Trabalho\\Vetorizador_Img\\imagens_vetorizadas\\loading\\Z2.webp",
+          "bytes": 29682,
+          "human_size": "29.0 KB",
+          "reduction_percent_vs_source": 82.66
+        }
+      ],
+      "warnings": [],
+      "error": null
+    },
+    {
+      "source": "C:\\Users\\thiag\\OneDrive\\Área de Trabalho\\Vetorizador_Img\\imgs\\salinas.webp",
+      "source_bytes": 116144,
+      "detected_kind": "graphic",
+      "analysis": {
+        "kind": "photo",
+        "confidence": 0.697,
+        "quantization_rmse": 12.499,
+        "approximate_unique_colors": 2421,
+        "edge_density": 0.11129,
+        "entropy": 7.16,
+        "has_alpha": false
+      },
+      "outputs": [
+        {
+          "path": "C:\\Users\\thiag\\OneDrive\\Área de Trabalho\\Vetorizador_Img\\imagens_vetorizadas\\salinas.svg",
+          "bytes": 1554946,
+          "human_size": "1.5 MB",
+          "reduction_percent_vs_source": -1238.81,
+          "vectorization": {
+            "palette_colors_used": 16,
+            "svg_paths": 15,
+            "svg_points": 187002,
+            "trace_dimensions": [
+              1280,
+              853
+            ]
+          }
+        },
+        {
+          "path": "C:\\Users\\thiag\\OneDrive\\Área de Trabalho\\Vetorizador_Img\\imagens_vetorizadas\\salinas.webp",
+          "bytes": 152942,
+          "human_size": "149.4 KB",
+          "reduction_percent_vs_source": -31.68
+        }
+      ],
+      "warnings": [
+        "Vetorização forçada em imagem com características fotográficas; o SVG pode ficar maior ou menos fiel."
+      ],
+      "error": null
+    },
+    {
+      "source": "C:\\Users\\thiag\\OneDrive\\Área de Trabalho\\Vetorizador_Img\\imgs\\spelogo.jpeg",
+      "source_bytes": 21024,
+      "detected_kind": "graphic",
+      "analysis": {
+        "kind": "graphic",
+        "confidence": 0.99,
+        "quantization_rmse": 4.374,
+        "approximate_unique_colors": 80,
+        "edge_density": 0.06697,
+        "entropy": 2.409,
+        "has_alpha": false
+      },
+      "outputs": [
+        {
+          "path": "C:\\Users\\thiag\\OneDrive\\Área de Trabalho\\Vetorizador_Img\\imagens_vetorizadas\\spelogo.svg",
+          "bytes": 57597,
+          "human_size": "56.2 KB",
+          "reduction_percent_vs_source": -173.96,
+          "vectorization": {
+            "palette_colors_used": 16,
+            "svg_paths": 11,
+            "svg_points": 7116,
+            "trace_dimensions": [
+              500,
+              500
+            ]
+          }
+        },
+        {
+          "path": "C:\\Users\\thiag\\OneDrive\\Área de Trabalho\\Vetorizador_Img\\imagens_vetorizadas\\spelogo.webp",
+          "bytes": 16376,
+          "human_size": "16.0 KB",
+          "reduction_percent_vs_source": 22.11
+        }
+      ],
+      "warnings": [],
+      "error": null
+    }
+  ]
+}
