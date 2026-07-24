@@ -33,7 +33,7 @@ export function HeroSection() {
     <section className="hero" id="inicio" ref={heroRef}>
       <div className="hero-sticky">
         <div className="hero-origin" aria-label="Da SPE UFPA">
-          <img src={`${import.meta.env.BASE_URL}spelogo.jpeg`} alt={'SPE International — Universidade Federal do Par\u00e1 Student Chapter'} />
+          <img src={`${import.meta.env.BASE_URL}imagens_vetorizadas/spelogo.svg`} alt={'SPE International — Universidade Federal do Par\u00e1 Student Chapter'} />
           <span className="hero-origin__from">Da SPE UFPA</span>
           <small>{'Universidade Federal do Par\u00e1 · Student Chapter'}</small>
         </div>
@@ -45,7 +45,7 @@ export function HeroSection() {
           <div className="hero-content">
             <p className="hero-eyebrow"><span /> {'Bel\u00e9m recebe o futuro da energia'}</p>
             <div className="hero-logo-stage">
-              <img className="hero-logo" src={`${import.meta.env.BASE_URL}amazonlogo.png`} alt={'2\u00ba Amazon Tech Energy — Margem Equatorial: da explora\u00e7\u00e3o \u00e0 produ\u00e7\u00e3o'} />
+              <img className="hero-logo" src={`${import.meta.env.BASE_URL}imagens_vetorizadas/amazonlogo.svg`} alt={'2\u00ba Amazon Tech Energy — Margem Equatorial: da explora\u00e7\u00e3o \u00e0 produ\u00e7\u00e3o'} />
             </div>
             <h1><span>{'A for\u00e7a do futuro'}</span> {'energ\u00e9tico.'}</h1>
             <p className="hero-date">15—17 <span>setembro</span></p>

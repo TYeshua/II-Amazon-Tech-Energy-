@@ -1,16 +1,16 @@
 import { useEffect, useState } from 'react'
 
 const letters = [
-  { letter: 'A', images: ['A1.png', 'A2.png', 'A3.png', 'A4.png'] },
-  { letter: 'M', images: ['M1.png', 'M2.png', 'M3.png'] },
-  { letter: 'A', images: ['A2.png', 'A3.png', 'A4.png', 'A1.png'] },
-  { letter: 'Z', images: ['Z1.png', 'Z2.png'] },
-  { letter: 'O', images: ['O1.png', 'O2.png'] },
-  { letter: 'N', images: ['N1.png'] },
-  { letter: 'T', images: ['T1.png', 'T2.png'], newWord: true },
-  { letter: 'E', images: ['E1.png', 'E2.png', 'E3.png'] },
-  { letter: 'C', images: ['C1.png', 'C2.png', 'C3.png'] },
-  { letter: 'H', images: ['H1.png', 'H2.png'] },
+  { letter: 'A', images: ['A1.webp', 'A2.webp', 'A3.webp', 'A4.webp'] },
+  { letter: 'M', images: ['M1.webp', 'M2.webp', 'M3.webp'] },
+  { letter: 'A', images: ['A2.webp', 'A3.webp', 'A4.webp', 'A1.webp'] },
+  { letter: 'Z', images: ['Z1.webp', 'Z2.webp'] },
+  { letter: 'O', images: ['O1.webp', 'O2.webp'] },
+  { letter: 'N', images: ['N1.webp'] },
+  { letter: 'T', images: ['T1.webp', 'T2.webp'], newWord: true },
+  { letter: 'E', images: ['E1.webp', 'E2.webp', 'E3.webp'] },
+  { letter: 'C', images: ['C1.webp', 'C2.webp', 'C3.webp'] },
+  { letter: 'H', images: ['H1.webp', 'H2.webp'] },
 ]
 
 const loadingImages = [...new Set(letters.flatMap(({ images }) => images))]
@@ -40,8 +40,8 @@ export function LoadingScreen() {
     const assetsReady = Promise.all([
       windowReady,
       document.fonts?.ready ?? Promise.resolve(),
-      preloadImage(`${import.meta.env.BASE_URL}amazonlogo.png`),
-      ...loadingImages.map((name) => preloadImage(`${import.meta.env.BASE_URL}loading/${name}`)),
+      preloadImage(`${import.meta.env.BASE_URL}imagens_vetorizadas/amazonlogo.svg`),
+      ...loadingImages.map((name) => preloadImage(`${import.meta.env.BASE_URL}imagens_vetorizadas/loading/${name}`)),
     ])
     const minimumRun = new Promise<void>((resolve) => window.setTimeout(resolve, 4700))
     const logoTimer = window.setTimeout(() => setStage('name'), 1650)
@@ -72,7 +72,7 @@ export function LoadingScreen() {
       <div className="loader__atmosphere" aria-hidden="true" />
       <div className="loader__logo-stage">
         <span className="loader__logo-orbit" aria-hidden="true" />
-        <img src={`${import.meta.env.BASE_URL}amazonlogo.png`} alt="2º Amazon Tech Energy" className="loader__logo" />
+        <img src={`${import.meta.env.BASE_URL}imagens_vetorizadas/amazonlogo.svg`} alt="2º Amazon Tech Energy" className="loader__logo" />
       </div>
 
       <div className="loader__name-stage" aria-hidden="true">
@@ -87,7 +87,7 @@ export function LoadingScreen() {
               {images.map((image, imageIndex) => (
                 <img
                   className={imageIndex === frame % images.length ? 'is-active' : ''}
-                  src={`${import.meta.env.BASE_URL}loading/${image}`}
+                  src={`${import.meta.env.BASE_URL}imagens_vetorizadas/loading/${image}`}
                   alt=""
                   key={image}
                 />
