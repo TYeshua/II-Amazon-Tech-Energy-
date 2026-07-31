@@ -1,91 +1,114 @@
-import { ArrowLeft, ArrowRight, Cpu, MessagesSquare, Presentation, Target, Users, UserRoundSearch, type LucideIcon } from 'lucide-react'
+import { CalendarDays } from 'lucide-react'
 import { useState, type CSSProperties } from 'react'
 
-type EnergyCard = {
-  eyebrow: string
+type ScheduleItem = {
+  time?: string
   title: string
-  description: string
-  icon: LucideIcon
-  tone: 'green' | 'blue'
-  suffix?: string
-  items?: string[]
+  kind?: 'break' | 'highlight'
 }
 
-const cards: EnergyCard[] = [
-  { eyebrow: 'Programação', title: '10 palestras', description: 'Conteúdo técnico, tendências e perspectivas para o futuro da energia.', icon: Presentation, tone: 'green' },
-  { eyebrow: 'Estimativa de público', title: '100–150', suffix: 'pessoas por dia', description: 'Um encontro próximo, relevante e pensado para boas conexões.', icon: Users, tone: 'green' },
-  { eyebrow: 'Programação', title: '2 mesas-redondas', description: 'Debate aberto e troca de experiências entre diferentes vozes do setor.', icon: MessagesSquare, tone: 'blue' },
-  { eyebrow: 'Perfis de audiência', title: 'Uma rede diversa', description: 'Estudantes, profissionais e interessados em energia, indústria e inovação.', icon: UserRoundSearch, tone: 'blue' },
+type ScheduleDay = {
+  label: string
+  title: string
+  items: ScheduleItem[]
+}
+
+const schedule: ScheduleDay[] = [
   {
-    eyebrow: 'Público-alvo', title: 'Para quem é o evento', description: 'Conhecimento que aproxima formação, mercado e novas oportunidades.',
-    icon: Target, tone: 'green',
-    items: ['Estudantes da região Norte e de todo o Brasil', 'Profissionais dos setores energético e tecnológico', 'Interessados em energia, indústria e inovação'],
+    label: 'Dia 1',
+    title: 'Abertura',
+    items: [
+      { time: '08h00', title: 'Credenciamento e Café da Manhã', kind: 'break' },
+      { time: '09h00', title: 'Mesa de Abertura: Cláudio, Denis e Prof. Antônio', kind: 'highlight' },
+      { time: '10h00', title: 'Palestra 1: O potencial da Margem Equatorial Brasileira no Cenário Energético Mundial' },
+      { time: '10h50', title: 'Sorteio de Brindes', kind: 'break' },
+      { time: '11h00', title: 'Palestra 2: Geologia da Margem Equatorial: sistemas petrolíferos de produção' },
+      { time: '12h00', title: 'Almoço', kind: 'break' },
+      { time: '14h00', title: 'Momento Picolé', kind: 'break' },
+      { time: '14h30', title: 'Palestra 3: Aquisição e Interpretação Sísmica da Exploração Offshore' },
+      { time: '15h30', title: 'Palestra 4: Gestão de Riscos na Exploração Offshore: segurança, meio ambiente e operações' },
+      { time: '16h30', title: 'Painel 1: Licenciamento ambiental e desafios regulatórios na Margem Equatorial', kind: 'highlight' },
+      { time: '17h30', title: 'Sorteio de Brindes', kind: 'break' },
+      { time: '18h00', title: 'Coffee Break e Atração', kind: 'break' },
+    ],
   },
   {
-    eyebrow: 'Conteúdo', title: 'Temas previstos', description: 'Da exploração à produção, com tecnologia e desenvolvimento regional.',
-    icon: Cpu, tone: 'blue',
-    items: ['Margem Equatorial', 'Engenharia de Reservatório', 'Energia e carreira', 'Engenharia de Poço', 'Tecnologia e Indústria 4.0'],
+    label: 'Dia 2',
+    title: 'Exploração e carreira',
+    items: [
+      { time: '08h30', title: 'Café da Manhã', kind: 'break' },
+      { time: '09h00', title: 'Palestra 5: Perfuração Offshore em águas profundas e ultraprofundas' },
+      { time: '09h50', title: 'Sorteio de Brindes', kind: 'break' },
+      { time: '10h00', title: 'Palestra 6: Fluidos de perfuração e sua influência na estabilidade e produção do poço' },
+      { time: '11h00', title: 'Painel 2: Como ingressar com sucesso no mercado de trabalho: ter um perfil relevante na indústria de óleo e gás', kind: 'highlight' },
+      { time: '12h00', title: 'Almoço', kind: 'break' },
+      { time: '14h00', title: 'Momento Picolé', kind: 'break' },
+      { time: '14h30', title: 'Palestra 7: Engenharia de Reservatório: desenvolvimento de campos na Margem Equatorial' },
+      { time: '15h40', title: 'Minicurso 1: Engenharia Submarina e Produção Offshore: sistemas subsea, infraestrutura e tecnologias para otimização da eficiência operacional', kind: 'highlight' },
+      { time: '17h40', title: 'Sorteio de Brindes', kind: 'break' },
+      { time: '18h00', title: 'Coffee Break e Atração', kind: 'break' },
+    ],
+  },
+  {
+    label: 'Dia 3',
+    title: 'Tecnologia e futuro',
+    items: [
+      { time: '08h30', title: 'Café da Manhã', kind: 'break' },
+      { time: '09h00', title: 'Minicurso 2: Controle de poço ou introdução ao Machine Learning para aplicações em óleo e gás', kind: 'highlight' },
+      { time: '10h00', title: 'Intervalo do Minicurso e Sorteio de Brindes', kind: 'break' },
+      { time: '10h10', title: 'Continuação do Minicurso', kind: 'highlight' },
+      { time: '11h00', title: 'Mesa-redonda: Perspectivas profissionais em torno da exploração da Margem Equatorial', kind: 'highlight' },
+      { time: '12h00', title: 'Almoço', kind: 'break' },
+      { time: '14h00', title: 'Momento Picolé', kind: 'break' },
+      { time: '14h30', title: 'Palestra 8: CCUS — Captura, Utilização e Armazenamento de Carbono da indústria de óleo e gás' },
+      { time: '15h30', title: 'Palestra 9: O futuro da Engenharia de Petróleo na era da Inteligência Artificial: da sísmica à descoberta de reservatórios' },
+      { time: '15h40', title: 'Sorteio de Brindes', kind: 'break' },
+      { time: '16h00', title: 'Palestra SLB' },
+      { time: '17h00', title: 'Encerramento', kind: 'highlight' },
+      { time: '17h30', title: 'Coffee Break (Casemirão)', kind: 'break' },
+      { title: 'Coquetel — Casemirão', kind: 'break' },
+    ],
   },
 ]
 
 export function EnergyFieldSection() {
-  const [activeIndex, setActiveIndex] = useState(0)
-  const [hasInteracted, setHasInteracted] = useState(false)
+  const [activeDay, setActiveDay] = useState(0)
+  const day = schedule[activeDay]
 
-  const selectCard = (index: number) => {
-    setHasInteracted(true)
-    setActiveIndex((index + cards.length) % cards.length)
-  }
-
-  return <section className="energy-field" aria-labelledby="energy-field-title">
+  return <section className="energy-field energy-field--schedule" id="programacao" aria-labelledby="energy-field-title">
     <div className="energy-field__glow" aria-hidden="true" />
     <div className="energy-field__mesh" aria-hidden="true" />
 
-    <div className="energy-field__content">
+    <div className="energy-field__content schedule-layout">
       <header className="energy-field__heading">
         <span>Energia em movimento</span>
         <h2 id="energy-field-title">Programação,<br />público <em>e temas</em></h2>
         <p>Conhecimento, tecnologia e futuro conectando a Amazônia.</p>
       </header>
 
-      <div className={`energy-orbit${hasInteracted ? ' is-interactive' : ''}`} aria-label="Programação, público e temas do evento">
-        <div className="energy-orbit__rings" aria-hidden="true"><i /><i /><i /></div>
-        <div className="energy-orbit__core" aria-hidden="true"><span>ATE</span><small>2026</small></div>
-
-        {cards.map((card, index) => {
-          const relative = (index - activeIndex + cards.length) % cards.length
-          const angle = relative * (Math.PI * 2 / cards.length)
-          const style = {
-            '--orbit-x': `${Math.sin(angle) * 44}%`,
-            '--orbit-y': `${-Math.cos(angle) * 35}%`,
-            '--orbit-depth': Math.cos(angle).toFixed(3),
-            '--orbit-order': Math.round((Math.cos(angle) + 1) * 10),
-          } as CSSProperties
-          const Icon = card.icon
-          return <button
-            key={card.title}
+      <div className="schedule" aria-label="Programação dos três dias do evento">
+        <div className="schedule__tabs" role="tablist" aria-label="Escolha o dia da programação">
+          {schedule.map((item, index) => <button
+            key={item.label}
+            id={`schedule-tab-${index + 1}`}
             type="button"
-            className={`energy-orbit__card energy-orbit__card--${card.tone}${index === activeIndex ? ' is-active' : ''}`}
-            style={style}
-            onClick={() => selectCard(index)}
-            aria-pressed={index === activeIndex}
-            aria-label={`${card.eyebrow}: ${card.title}`}
-          >
-            <span className="energy-orbit__card-top"><Icon aria-hidden="true" /><small>{String(index + 1).padStart(2, '0')}</small></span>
-            <span className="energy-orbit__eyebrow">{card.eyebrow}</span>
-            <strong>{card.title}</strong>
-            {card.suffix && <b>{card.suffix}</b>}
-            <span className="energy-orbit__description">{card.description}</span>
-            {card.items && <span className="energy-orbit__items">{card.items.map(item => <i key={item}>{item}</i>)}</span>}
-          </button>
-        })}
-
-        <div className="energy-orbit__controls">
-          <button type="button" onClick={() => selectCard(activeIndex - 1)} aria-label="Ver card anterior"><ArrowLeft /></button>
-          <span><b>{String(activeIndex + 1).padStart(2, '0')}</b> / {String(cards.length).padStart(2, '0')}</span>
-          <button type="button" onClick={() => selectCard(activeIndex + 1)} aria-label="Ver próximo card"><ArrowRight /></button>
+            role="tab"
+            aria-selected={activeDay === index}
+            aria-controls={`schedule-panel-${index + 1}`}
+            className={activeDay === index ? 'is-active' : ''}
+            onClick={() => setActiveDay(index)}
+          ><small>Programação</small><strong>{item.label}</strong></button>)}
         </div>
-        <p className="energy-orbit__hint">Clique em um card para movimentar a experiência</p>
+
+        <div key={activeDay} className="schedule__panel schedule__panel--entering" id={`schedule-panel-${activeDay + 1}`} role="tabpanel" aria-labelledby={`schedule-tab-${activeDay + 1}`}>
+          <div className="schedule__day-heading"><CalendarDays aria-hidden="true" /><span><small>{day.label}</small><strong>{day.title}</strong></span></div>
+          <ol className="schedule__list">
+            {day.items.map((item, index) => <li style={{ '--item-index': index } as CSSProperties} className={item.kind ? `schedule__item schedule__item--${item.kind}` : 'schedule__item'} key={`${item.time}-${index}`}>
+              <time>{item.time ?? 'Após'}</time>
+              <span>{item.title}</span>
+            </li>)}
+          </ol>
+        </div>
       </div>
     </div>
   </section>

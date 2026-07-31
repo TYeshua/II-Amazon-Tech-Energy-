@@ -1,5 +1,5 @@
 import { Canvas, useFrame, useLoader, useThree } from '@react-three/fiber'
-import { CalendarDays, Clock3, MapPin, UsersRound } from 'lucide-react'
+import { Box, CalendarDays, Clock3, Map, MapPin, UsersRound } from 'lucide-react'
 import { Component, Suspense, useEffect, useMemo, useRef, useState, type ReactNode } from 'react'
 import { ACESFilmicToneMapping, Box3, Group, MathUtils, SRGBColorSpace, Vector3 } from 'three'
 import { GLTFLoader } from 'three/addons/loaders/GLTFLoader.js'
@@ -124,6 +124,28 @@ function LazyVenueCanvas() {
   </div>
 }
 
+function VenueExperience() {
+  const [view, setView] = useState<'model' | 'map'>('model')
+  const projectUrl = typeof window === 'undefined'
+    ? ''
+    : new URL(`${import.meta.env.BASE_URL}localizacao-fonte-carana.geolibre.json`, window.location.href).href
+  const geoLibreUrl = `https://web.geolibre.app/?url=${encodeURIComponent(projectUrl)}&maponly&theme=dark`
+
+  return <>
+    <div className="venue-card__switcher" role="group" aria-label="Visualização do local">
+      <button type="button" className={view === 'model' ? 'is-active' : ''} onClick={() => setView('model')} aria-pressed={view === 'model'}><Box size={14}/> Modelo 3D</button>
+      <button type="button" className={view === 'map' ? 'is-active' : ''} onClick={() => setView('map')} aria-pressed={view === 'map'}><Map size={14}/> Mapa GeoLibre</button>
+    </div>
+    <div className={`venue-card__view ${view === 'model' ? 'is-active' : ''}`} aria-hidden={view !== 'model'}>
+      <LazyVenueCanvas />
+    </div>
+    <div className={`venue-card__view venue-card__map ${view === 'map' ? 'is-active' : ''}`} aria-hidden={view !== 'map'}>
+      {view === 'map' && <iframe src={geoLibreUrl} title="Mapa GeoLibre da Casa de Cultura Fonte do Caranã" loading="lazy" allow="fullscreen; geolocation" />}
+      <span className="venue-card__map-caption"><MapPin size={13}/> Praça Fonte do Caranã · Salinópolis, PA</span>
+    </div>
+  </>
+}
+
 export function AboutEventSection() {
   return <section className="about-event" id="sobre" aria-labelledby="about-event-title">
     <div className="about-event__glow" aria-hidden="true" />
@@ -146,7 +168,7 @@ export function AboutEventSection() {
         <div className="venue-card">
           <div className="venue-card__environment" role="img" aria-label="Auditório da Casa de Cultura Fonte do Caranã" />
           <div className="venue-card__shade" />
-          <LazyVenueCanvas />
+          <VenueExperience />
           <div className="venue-card__label"><MapPin size={15}/><span><small>Local do evento</small>Fonte do Caranã</span></div>
           <div className="venue-card__city">
             <img src={`${import.meta.env.BASE_URL}imagens_vetorizadas/salinas.webp`} alt="Vista aérea de Salinópolis, Pará" />
