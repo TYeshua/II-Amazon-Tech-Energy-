@@ -43,7 +43,7 @@ export function HeroSection() {
           <div className="hero-grid" aria-hidden="true" />
 
           <div className="hero-content">
-            <p className="hero-eyebrow"><span /> {'Bel\u00e9m recebe o futuro da energia'}</p>
+            <p className="hero-eyebrow"><span /> {'Salin\u00f3polis recebe o futuro da energia'}</p>
             <div className="hero-logo-stage">
               <img className="hero-logo" src={`${import.meta.env.BASE_URL}imagens_vetorizadas/amazonlogo.svg`} alt={'2\u00ba Amazon Tech Energy — Margem Equatorial: da explora\u00e7\u00e3o \u00e0 produ\u00e7\u00e3o'} />
             </div>

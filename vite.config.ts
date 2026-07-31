@@ -19,6 +19,6 @@ const sitesWorker = () => ({
 })
 
 export default defineConfig({
-  base: '/',
+  base: '/II-Amazon-Tech-Energy-/',
   plugins: [react(), tailwindcss(), sitesWorker()],
 })

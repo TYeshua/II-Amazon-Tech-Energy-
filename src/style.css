@@ -304,7 +304,7 @@ body.is-preloading{overflow:hidden}.is-preloading .hero:before,.is-preloading .h
 
 /* Three-day event schedule */
 .energy-field--schedule{height:auto;min-height:900px;padding:clamp(86px,9vw,132px) 0;overflow:hidden}
-.energy-field--schedule .schedule-layout{grid-template-columns:minmax(250px,.45fr) minmax(620px,1.55fr);align-items:start}
+.energy-field--schedule .schedule-layout{grid-template-columns:minmax(220px,.45fr) minmax(0,1.55fr);align-items:start}
 .schedule{min-width:0}
 .schedule__tabs{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-bottom:14px}
 .schedule__tabs button{display:grid;gap:3px;padding:17px 20px;border:1px solid rgba(255,255,255,.1);border-radius:16px;color:rgba(232,241,236,.55);background:rgba(8,30,39,.72);text-align:left;cursor:pointer;transition:.25s ease}
