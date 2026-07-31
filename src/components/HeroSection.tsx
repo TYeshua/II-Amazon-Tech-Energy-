@@ -33,7 +33,7 @@ export function HeroSection() {
     <section className="hero" id="inicio" ref={heroRef}>
       <div className="hero-sticky">
         <div className="hero-origin" aria-label="Da SPE UFPA">
-          <img src={`${import.meta.env.BASE_URL}imagens_vetorizadas/spelogo.svg`} alt={'SPE International — Universidade Federal do Par\u00e1 Student Chapter'} />
+          <img src={`${import.meta.env.BASE_URL}speufpa.PNG`} alt={'SPE International — Universidade Federal do Par\u00e1 Student Chapter'} />
           <span className="hero-origin__from">Da SPE UFPA</span>
           <small>{'Universidade Federal do Par\u00e1 · Student Chapter'}</small>
         </div>

@@ -2,7 +2,7 @@ import { Menu, Search, X } from 'lucide-react'
 import { useEffect, useRef, useState } from 'react'
 import OptionWheel from './OptionWheel'
 
-const links = [['Sobre o evento','#sobre'],['Programação','#debate'],['Palestrantes','#debate'],['Organização','#bacia'],['Inscrição','#debate']]
+const links = [['Sobre o evento','#sobre'],['Programação','#debate'],['Palestrantes','#debate'],['Organização','#organizacao'],['Inscrição','#debate']]
 
 export function SiteHeader(){
   const [open,setOpen]=useState(false),[query,setQuery]=useState('')
