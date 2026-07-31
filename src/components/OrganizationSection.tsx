@@ -1,15 +1,17 @@
 import { ChevronLeft, ChevronRight, Linkedin } from 'lucide-react'
 import { useEffect, useRef, useState } from 'react'
 
+const assetUrl = (path: string) => `${import.meta.env.BASE_URL}${path}`
+
 const organizers = [
-  { name: 'Shelda Corrêa', title: 'Presidente', image: '/team_webp/shelda.webp', linkedin: 'https://www.linkedin.com/in/shelda-corr%C3%AAa-988a10159/' },
-  { name: 'Davi Maia', title: 'Vice-presidente', image: '/team_webp/davi.webp', linkedin: 'https://www.linkedin.com/in/davi-maia-557a7634b' },
-  { name: 'Evelyn Campelo', title: 'Conselheira', image: '/team_webp/Eveli.webp', linkedin: 'https://www.linkedin.com/in/evelyncampelo' },
-  { name: 'Thiago Yeshua', title: 'Diretor de Tecnologia — Webmaster', image: '/team_webp/yeshuanovo.webp', linkedin: 'https://www.linkedin.com/in/thiagoyeshua' },
-  { name: 'Ana Brito', title: 'Diretora de Marketing', image: '/team_webp/ana2.webp', linkedin: 'https://www.linkedin.com/in/ana-clara-nascimento-7a4034255' },
-  { name: 'Gabriel Braga', title: 'Diretor de Comunicação e Eventos', image: '/team_webp/braga.webp', linkedin: 'https://www.linkedin.com/in/gabriel-braga-975990235' },
-  { name: 'Ana Anjo', title: 'Tesoureira', image: '/team_webp/anaanjo.webp', linkedin: 'https://www.linkedin.com/in/ana-clara-anjo-b59738256' },
-  { name: 'Andressa Menezes', title: 'Secretária', image: '/team_webp/andressa.webp', linkedin: 'https://www.linkedin.com/in/andressa-menezes-a1b358303' },
+  { name: 'Shelda Corrêa', title: 'Presidente', image: assetUrl('team_webp/shelda.webp'), linkedin: 'https://www.linkedin.com/in/shelda-corr%C3%AAa-988a10159/' },
+  { name: 'Davi Maia', title: 'Vice-presidente', image: assetUrl('team_webp/davi.webp'), linkedin: 'https://www.linkedin.com/in/davi-maia-557a7634b' },
+  { name: 'Evelyn Campelo', title: 'Conselheira', image: assetUrl('team_webp/Eveli.webp'), linkedin: 'https://www.linkedin.com/in/evelyncampelo' },
+  { name: 'Thiago Yeshua', title: 'Diretor de Tecnologia — Webmaster', image: assetUrl('team_webp/yeshuanovo.webp'), linkedin: 'https://www.linkedin.com/in/thiagoyeshua' },
+  { name: 'Ana Brito', title: 'Diretora de Marketing', image: assetUrl('team_webp/ana2.webp'), linkedin: 'https://www.linkedin.com/in/ana-clara-nascimento-7a4034255' },
+  { name: 'Gabriel Braga', title: 'Diretor de Comunicação e Eventos', image: assetUrl('team_webp/braga.webp'), linkedin: 'https://www.linkedin.com/in/gabriel-braga-975990235' },
+  { name: 'Ana Anjo', title: 'Tesoureira', image: assetUrl('team_webp/anaanjo.webp'), linkedin: 'https://www.linkedin.com/in/ana-clara-anjo-b59738256' },
+  { name: 'Andressa Menezes', title: 'Secretária', image: assetUrl('team_webp/andressa.webp'), linkedin: 'https://www.linkedin.com/in/andressa-menezes-a1b358303' },
 ]
 
 export function OrganizationSection() {

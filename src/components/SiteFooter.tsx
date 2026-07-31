@@ -1,10 +1,12 @@
 import { useEffect, useRef, useState } from 'react'
 import { Code2, Instagram, Linkedin, Mail, X } from 'lucide-react'
 
+const assetUrl = (path: string) => `${import.meta.env.BASE_URL}${path}`
+
 const creators = [
-  { name: 'Douglas', image: '/team_webp/douglas.webp', position: 'left' },
-  { name: 'Thiago Yeshua', image: '/team_webp/yeshuanovo.webp', role: 'Webmaster', position: 'center' },
-  { name: 'Roberta', image: '/team_webp/roberta.webp', credit: 'Criativo', position: 'right' },
+  { name: 'Douglas', image: assetUrl('team_webp/douglas.webp'), position: 'left' },
+  { name: 'Thiago Yeshua', image: assetUrl('team_webp/yeshuanovo.webp'), role: 'Webmaster', position: 'center' },
+  { name: 'Roberta', image: assetUrl('team_webp/roberta.webp'), credit: 'Criativo', position: 'right' },
 ]
 
 export function SiteFooter() {
@@ -35,7 +37,7 @@ export function SiteFooter() {
         <div className="site-footer__glow" aria-hidden="true" />
         <div className="site-footer__inner">
           <div className="site-footer__brand">
-            <img src="/speufpa.PNG" alt="SPE UFPA Student Chapter" />
+            <img src={assetUrl('speufpa.PNG')} alt="SPE UFPA Student Chapter" />
             <div>
               <strong>SPE UFPA</strong>
               <span>Student Chapter</span>
