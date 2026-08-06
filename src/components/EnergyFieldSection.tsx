@@ -82,7 +82,7 @@ export function EnergyFieldSection() {
     <div className="energy-field__content schedule-layout">
       <header className="energy-field__heading">
         <span>Energia em movimento</span>
-        <h2 id="energy-field-title">Programação,<br />público <em>e temas</em></h2>
+        <h2 id="energy-field-title">Programação, público <em>e temas</em></h2>
         <p>Conhecimento, tecnologia e futuro conectando a Amazônia.</p>
       </header>
 

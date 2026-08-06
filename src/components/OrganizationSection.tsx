@@ -6,7 +6,7 @@ const assetUrl = (path: string) => `${import.meta.env.BASE_URL}${path}`
 const organizers = [
   { name: 'Shelda Corrêa', title: 'Presidente', image: assetUrl('team_webp/shelda.webp'), linkedin: 'https://www.linkedin.com/in/shelda-corr%C3%AAa-988a10159/' },
   { name: 'Davi Maia', title: 'Vice-presidente', image: assetUrl('team_webp/davi.webp'), linkedin: 'https://www.linkedin.com/in/davi-maia-557a7634b' },
-  { name: 'Evelyn Campelo', title: 'Conselheira', image: assetUrl('team_webp/Eveli.webp'), linkedin: 'https://www.linkedin.com/in/evelyncampelo' },
+  { name: 'Evelyn Campelo', title: 'Conselheira', image: assetUrl('team_webp/Eveli.webp'), linkedin: 'https://www.linkedin.com/in/evelyncampelo', objectPosition: 'center 20%' },
   { name: 'Thiago Yeshua', title: 'Diretor de Tecnologia — Webmaster', image: assetUrl('team_webp/yeshuanovo.webp'), linkedin: 'https://www.linkedin.com/in/thiagoyeshua' },
   { name: 'Ana Brito', title: 'Diretora de Marketing', image: assetUrl('team_webp/ana2.webp'), linkedin: 'https://www.linkedin.com/in/ana-clara-nascimento-7a4034255' },
   { name: 'Gabriel Braga', title: 'Diretor de Comunicação e Eventos', image: assetUrl('team_webp/braga.webp'), linkedin: 'https://www.linkedin.com/in/gabriel-braga-975990235' },
@@ -53,7 +53,7 @@ export function OrganizationSection() {
         <div className="organization__track" ref={trackRef} tabIndex={0} aria-label="Equipe organizadora">
           {organizers.map((person, index) => <article className="organizer-card" key={person.name}>
             <div className="organizer-card__image">
-              <img src={person.image} alt={`Retrato de ${person.name}`} loading="lazy" draggable="false" />
+              <img src={person.image} alt={`Retrato de ${person.name}`} loading="lazy" draggable="false" style={person.objectPosition ? { objectPosition: person.objectPosition } : undefined} />
               <span>{String(index + 1).padStart(2, '0')}</span>
             </div>
             <div className="organizer-card__body">
