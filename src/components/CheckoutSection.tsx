@@ -1,8 +1,11 @@
 import { useState, useEffect } from 'react';
 import { Reveal } from './Reveal';
 import { initMercadoPago, Payment } from '@mercadopago/sdk-react';
+import { Copy, Check } from 'lucide-react';
 
-initMercadoPago('APP_USR-715683952711754-050622-1406a7ae0adcf74f91e03fcb893c2c04-1958273471', { locale: 'pt-BR' });
+initMercadoPago('APP_USR-882ec9a9-4813-4c07-8fe7-53d5a0300dad', { locale: 'pt-BR' });
+
+const API_URL = import.meta.env.VITE_API_URL || 'http://localhost:8000';
 
 export function CheckoutSection() {
   const [profile, setProfile] = useState<'graduando' | 'profissional'>('graduando');
@@ -29,7 +32,7 @@ export function CheckoutSection() {
     if (qrCodeData && !paymentApproved) {
       intervalId = setInterval(async () => {
         try {
-          const res = await fetch(`http://localhost:8000/api/status-pagamento/${qrCodeData.idPagamento}`);
+          const res = await fetch(`${API_URL}/api/status-pagamento/${qrCodeData.idPagamento}`);
           const data = await res.json();
           if (data.status === 'approved') {
             setPaymentApproved(true);
@@ -52,7 +55,7 @@ export function CheckoutSection() {
     setError('');
     
     try {
-      const response = await fetch('http://localhost:8000/api/criar-pagamento-pix', {
+      const response = await fetch(`${API_URL}/api/criar-pagamento-pix`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -202,7 +205,7 @@ export function CheckoutSection() {
                           };
                           
                           // Garante que o payer existe
-                          if (!formData.payer) formData.payer = {};
+                          if (!formData.payer) formData.payer = {} as typeof formData.payer;
                           
                           // Injeta o Nome, Sobrenome, E-mail e CPF obrigatórios pelo Mercado Pago
                           if (nome) {
@@ -212,13 +215,11 @@ export function CheckoutSection() {
                           }
                           if (email) formData.payer.email = email;
                           if (cpf) {
-                            if (!formData.payer.identification) formData.payer.identification = {};
-                            formData.payer.identification.type = "CPF";
-                            formData.payer.identification.number = cpf.replace(/\D/g, '');
+                            formData.payer.identification = { type: "CPF", number: cpf.replace(/\D/g, '') };
                           }
 
-                          return new Promise((resolve, reject) => {
-                            fetch('http://localhost:8000/api/criar-pagamento-cartao', {
+                          return new Promise<void>((resolve, reject) => {
+                            fetch(`${API_URL}/api/criar-pagamento-cartao`, {
                               method: 'POST',
                               headers: { 'Content-Type': 'application/json' },
                               body: JSON.stringify(formData),
@@ -300,8 +301,35 @@ export function CheckoutSection() {
                     />
                   </div>
                   
-                  <div className="copia-cola" style={{ background: 'rgba(0,0,0,0.4)', padding: '12px 16px', borderRadius: '8px', wordBreak: 'break-all', fontSize: '12px', color: 'rgba(255,255,255,0.85)', border: '1px solid rgba(255,255,255,0.15)', maxWidth: '100%', width: '100%', boxSizing: 'border-box', marginBottom: '15px' }}>
-                    {qrCodeData.copiaCola}
+                  <div className="copia-cola" style={{ background: 'rgba(0,0,0,0.4)', padding: '12px 16px', borderRadius: '8px', border: '1px solid rgba(255,255,255,0.15)', maxWidth: '100%', width: '100%', boxSizing: 'border-box', marginBottom: '15px', display: 'flex', alignItems: 'center', gap: '10px' }}>
+                    <span style={{ wordBreak: 'break-all', fontSize: '12px', color: 'rgba(255,255,255,0.85)', flex: 1 }}>
+                      {qrCodeData.copiaCola}
+                    </span>
+                    <button
+                      type="button"
+                      aria-label="Copiar código Pix"
+                      onClick={() => {
+                        if (qrCodeData?.copiaCola) {
+                          navigator.clipboard.writeText(qrCodeData.copiaCola);
+                          setCopied(true);
+                          setTimeout(() => setCopied(false), 2500);
+                        }
+                      }}
+                      style={{
+                        flexShrink: 0,
+                        background: copied ? '#4caf50' : 'rgba(255,255,255,0.1)',
+                        border: '1px solid rgba(255,255,255,0.2)',
+                        borderRadius: '6px',
+                        padding: '6px',
+                        cursor: 'pointer',
+                        display: 'flex',
+                        alignItems: 'center',
+                        justifyContent: 'center',
+                        transition: 'background-color 0.2s ease'
+                      }}
+                    >
+                      {copied ? <Check size={16} color="#fff" /> : <Copy size={16} color="rgba(255,255,255,0.85)" />}
+                    </button>
                   </div>
                   
                   <button 

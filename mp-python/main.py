@@ -19,7 +19,11 @@ app = FastAPI(title="Amazon Tech API")
 # Configuração de CORS para permitir que o Frontend (React) acesse a API
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"], # Em produção, substitua "*" pela URL do seu frontend
+    allow_origins=[
+        "https://iiamazontechenergy.ufpa.br",
+        "http://iiamazontechenergy.ufpa.br",
+        "http://localhost:5173",
+    ],
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],

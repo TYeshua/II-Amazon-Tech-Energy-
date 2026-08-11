@@ -1,3 +1,4 @@
+
 import { useEffect, useRef } from 'react';
 import equatorialVideo from '../assets/maps/Equatorial.mp4';
 import { siteContent } from '../data/siteContent';

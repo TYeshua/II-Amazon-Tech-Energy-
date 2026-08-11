@@ -1,4 +1,5 @@
 import { useEffect, useRef } from 'react'
+import { ChevronDown } from 'lucide-react'
 
 export function HeroSection() {
   const heroRef = useRef<HTMLElement>(null)
@@ -54,6 +55,10 @@ export function HeroSection() {
           <a className="scroll-cue" href="#sobre">
             <span>Role para expandir</span>
             <i aria-hidden="true" />
+          </a>
+
+          <a className="hero-scroll-indicator" href="#sobre" aria-label="Rolar para baixo">
+            <ChevronDown size={20} aria-hidden="true" />
           </a>
 
           <div className="hero-progress" aria-hidden="true"><i /></div>

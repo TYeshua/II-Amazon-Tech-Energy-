@@ -1,5 +1,5 @@
-import { useRef, useState } from 'react'
-import { MapPin } from 'lucide-react'
+import { useState } from 'react'
+import { ChevronDown, ChevronUp, MapPin } from 'lucide-react'
 
 const basins = [
   {
@@ -35,54 +35,59 @@ const basins = [
 ]
 
 export function BasinSection() {
-  const scrollerRef = useRef<HTMLDivElement>(null)
   const [active, setActive] = useState(0)
-
-  const handleScroll = () => {
-      const scroller = scrollerRef.current
-      if (!scroller) return
-      const distance = Math.max(1, scroller.scrollHeight - scroller.clientHeight)
-      const progress = Math.min(1, Math.max(0, scroller.scrollTop / distance))
-      setActive(Math.round(progress * (basins.length - 1)))
-  }
 
   const basin = basins[active]
 
+  const goPrev = () => setActive((current) => (current - 1 + basins.length) % basins.length)
+  const goNext = () => setActive((current) => (current + 1) % basins.length)
+
   return (
     <section className="basin basin-story" id="bacia" aria-label="Curiosidades sobre as bacias da Margem Equatorial">
-      <div className="basin-scroller" ref={scrollerRef} onScroll={handleScroll} tabIndex={0} aria-label="Role para conhecer as cinco bacias">
-        <div className="basin-sticky">
-        <div className="basin-grid">
-          <div className="basin-progress" aria-label={`Bacia ${active + 1} de ${basins.length}`}>
+      <div className="basin-grid">
+        <div className="basin-nav">
+          <button type="button" className="basin-nav-btn" aria-label="Bacia anterior" onClick={goPrev}>
+            <ChevronUp size={16} />
+          </button>
+          <div className="basin-progress" role="tablist" aria-label="Selecionar bacia">
             {basins.map((item, index) => (
-              <span key={item.name} className={index === active ? 'is-active' : ''} />
+              <button
+                key={item.name}
+                type="button"
+                role="tab"
+                aria-selected={index === active}
+                aria-label={`Bacia ${item.name}`}
+                className={index === active ? 'is-active' : ''}
+                onClick={() => setActive(index)}
+              />
             ))}
           </div>
-          <div className="orbit-reveal">
-            <div className={`orbit orbit--step-${active + 1}`} key={basin.name}>
-              <div className="arc" />
-              <i className="node n1" />
-              <i className="node n2"><i className="orbit-pulse" /></i>
-              <i className="node n3" />
-              <i className="basin-connector" />
-              <div className="basin-changing" key={basin.name}>
-                <div className={`basin-shape basin-shape--${active + 1}`}>{basin.initials}</div>
-                <div className="basin-label">
-                  <strong>BACIA {basin.name.toUpperCase()}</strong>
-                  <span><MapPin size={12} /> {basin.location}</span>
-                </div>
+          <button type="button" className="basin-nav-btn" aria-label="Próxima bacia" onClick={goNext}>
+            <ChevronDown size={16} />
+          </button>
+        </div>
+        <div className="orbit-reveal">
+          <div className={`orbit orbit--step-${active + 1}`} key={basin.name}>
+            <div className="arc" />
+            <i className="node n1" />
+            <i className="node n2"><i className="orbit-pulse" /></i>
+            <i className="node n3" />
+            <i className="basin-connector" />
+            <div className="basin-changing" key={basin.name}>
+              <div className={`basin-shape basin-shape--${active + 1}`}>{basin.initials}</div>
+              <div className="basin-label">
+                <strong>BACIA {basin.name.toUpperCase()}</strong>
+                <span><MapPin size={12} /> {basin.location}</span>
               </div>
             </div>
           </div>
-          <div className="basin-quote-wrap" aria-live="polite">
-            <blockquote key={basin.name}>
-              <span>“</span>{basin.fact}
-            </blockquote>
-            <p className="basin-counter"><b>{String(active + 1).padStart(2, '0')}</b> / {String(basins.length).padStart(2, '0')}</p>
-          </div>
         </div>
+        <div className="basin-quote-wrap" aria-live="polite">
+          <blockquote key={basin.name}>
+            <span>“</span>{basin.fact}
+          </blockquote>
+          <p className="basin-counter"><b>{String(active + 1).padStart(2, '0')}</b> / {String(basins.length).padStart(2, '0')}</p>
         </div>
-        <div className="basin-scroll-track" aria-hidden="true" />
       </div>
     </section>
   )
